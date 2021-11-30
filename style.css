@@ -1,0 +1,125 @@
+address {
+    color: forestgreen; 
+    text-align: right;
+    font-size: 16px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#nav {
+    font-family: Arial;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    height: 63px;
+    font-size: 20px;
+    float: left;
+}
+
+#nav li {
+    font-size: 20px;
+    float: left;
+}
+  
+#nav li a {
+display: block;
+color: black;
+text-align: center;
+padding: 20px 30px;
+text-decoration: none;
+}
+
+#nav li a:hover:not(.active) {
+font-weight: bold;
+background-color: lightgray;
+font-size: 22px;
+text-decoration-line: underline;
+transition: 0.3s;
+}
+
+#nav li a:visited {
+    color: lightcoral;
+}
+
+#title {
+    padding: 160px 20px 20px; 
+    background-color: #f5f5f5; 
+    height: 800px;
+    /* Fixed background just for better visual effects */
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80px;
+    font-family: Verdana;
+}
+
+h2 {
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: darkmagenta;
+    font-family: Verdana;
+}
+
+h3 {
+    font-family: Arial;
+    margin-top: 100px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+p {
+    /* Margin left 1cm as stated in assignment requirements */
+    margin-left: 1cm;
+    font-family: Arial;
+    text-align: center;
+}
+
+h4 {
+    font-family: Arial;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 30pt;
+    text-align: left;
+}
+
+#models {
+    font-family: Arial;
+    list-style-type: none;
+    overflow: hidden;
+    height: 500px;
+    font-size: 20px;
+}
+
+.car-image {
+    width: 400px;
+    height: 300px;
+    margin: 10px -10px;
+    object-fit: cover;
+    display: block;
+}
+
+#models li {
+    margin: 0 100px;
+    float: left;
+}
+
+h5 {
+    margin: 10px 0;
+    font-size: 18pt;
+}

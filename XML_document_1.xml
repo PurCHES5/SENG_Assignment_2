@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SUV car XML-->
+<!DOCTYPE cars
+[
+<!ELEMENT cars (car*)>
+<!ATTLIST cars car-type CDATA #REQUIRED>
+<!ELEMENT car (car-model,description,cost,make,safety-rating,extras+,coupon-code?,reviews*,promo-pic-path+,manufacturer-promo-url)>
+<!ELEMENT car-model (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT safety-rating EMPTY>
+<!--I used attribute on safety rating since it's numbers out of 5-->
+<!ATTLIST safety-rating rating (0|1|2|3|4|5) #REQUIRED>
+<!ELEMENT extras (option, additional-cost)>
+<!ELEMENT option (#PCDATA)>
+<!ELEMENT additional-cost (#PCDATA)>
+<!ELEMENT coupon-code (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT promo-pic-path (#PCDATA)>
+<!ELEMENT manufacturer-promo-url (#PCDATA)>
+
+<!ENTITY universal-promo-code "AYUGFIAFOQWEQ">
+]>
+<cars car-type="SUV">
+  <car>
+    <car-model>XC90</car-model>
+    <description>A small SUV with a lot of useable space.</description>
+    <cost>$47,490</cost>
+    <make>Volvo</make>
+    <safety-rating rating="4"></safety-rating>
+    <extras>
+      <option>Interior Upgrade</option>
+      <additional-cost>$1,000</additional-cost>
+    </extras>
+    <extras>
+      <option>Turbocharge Upgrade</option>
+      <additional-cost>$10,000</additional-cost>
+    </extras>
+    <reviews>A fun and funky car! Looks small but not at all small.</reviews>
+    <promo-pic-path>images/xc90.webp</promo-pic-path>
+    <manufacturer-promo-url>https://www.volvocars.com</manufacturer-promo-url>
+  </car>
+
+  <car>
+    <car-model>Tiguan</car-model>
+    <description>Posh-looking and premium-feeling SUV.</description>
+    <cost>$34,990</cost>
+    <make>Volkswagen</make>
+    <safety-rating rating="4"></safety-rating>
+    <extras>
+      <option>Tire Upgrade</option>
+      <additional-cost>$300</additional-cost>
+    </extras>
+    <coupon-code>TUFHDAIQROE</coupon-code>
+    <reviews>A fun and funky car! Looks small but not at all small.</reviews>
+    <promo-pic-path>images/tiguan.jpg</promo-pic-path>
+    <manufacturer-promo-url>https://www.volkswagen.com.sg/tiguan</manufacturer-promo-url>
+  </car>
+
+  <car>
+    <car-model>Land Cruiser</car-model>
+    <description>A very capable and reliable 4x4.</description>
+    <cost>$89,990</cost>
+    <make>Toyota</make>
+    <safety-rating rating="5"></safety-rating>
+    <extras>
+      <option>Metallic Paint Upgrade</option>
+      <additional-cost>$300</additional-cost>
+    </extras>
+    <extras>
+      <option>Digital Dashboard Upgrade</option>
+      <additional-cost>$1,400</additional-cost>
+    </extras>
+    <coupon-code>GSOGUSUFQW</coupon-code>
+    <reviews>More luxurious than adventurous.</reviews>
+    <promo-pic-path>images/landcruiser.jpg</promo-pic-path>
+    <manufacturer-promo-url>https://global.toyota/</manufacturer-promo-url>
+  </car>
+</cars>

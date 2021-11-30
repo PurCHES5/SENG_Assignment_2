@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Template XML-->
+<!DOCTYPE cars
+[
+<!ELEMENT cars (car*)>
+<!ATTLIST cars car-type CDATA #REQUIRED>
+<!ELEMENT car (car-model,description,cost,make,safety-rating,extras+,coupon-code?,reviews*,promo-pic-path+,manufacturer-promo-url)>
+<!ELEMENT car-model (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT safety-rating EMPTY>
+<!--I used attribute on safety rating since it's numbers out of 5-->
+<!ATTLIST safety-rating rating (0|1|2|3|4|5) #REQUIRED>
+<!ELEMENT extras (option, additional-cost)>
+<!ELEMENT option (#PCDATA)>
+<!ELEMENT additional-cost (#PCDATA)>
+<!ELEMENT coupon-code (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT promo-pic-path (#PCDATA)>
+<!ELEMENT manufacturer-promo-url (#PCDATA)>
+
+<!-- This entity works as a pre-defined promo code. Used in situations like a public campaign, where new customers can apply this promo code to get a discount. -->
+<!ENTITY universal-promo-code "AYUGFIAFOQWEQ">
+]>
+<cars car-type="Budget">
+  <car>
+    <car-model>FamilyGo</car-model>
+    <description>A good family car. Safe, spacious, and extraordinary comfortable.</description>
+    <cost>$50,000</cost>
+    <make>Star</make>
+    <safety-rating rating="5"></safety-rating>
+    <extras>
+      <option>Seat Upgrade</option>
+      <additional-cost>$500</additional-cost>
+    </extras>
+    <extras>
+      <option>Engine Upgrade</option>
+      <additional-cost>$3,000</additional-cost>
+    </extras>
+    <coupon-code>&universal-promo-code;</coupon-code>
+    <reviews>Very nice car for 3 - 5 members family!</reviews>
+    <promo-pic-path>image/starcarPromoPic.jpg</promo-pic-path>
+    <manufacturer-promo-url>www.starcar.com</manufacturer-promo-url>
+  </car>
+</cars>

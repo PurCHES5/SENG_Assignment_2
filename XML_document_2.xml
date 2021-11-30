@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Luxury car XML-->
+<!DOCTYPE cars
+[
+<!ELEMENT cars (car*)>
+<!ATTLIST cars car-type CDATA #REQUIRED>
+<!ELEMENT car (car-model,description,cost,make,safety-rating,extras+,coupon-code?,reviews*,promo-pic-path+,manufacturer-promo-url)>
+<!ELEMENT car-model (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT safety-rating EMPTY>
+<!--I used attribute on safety rating since it's numbers out of 5-->
+<!ATTLIST safety-rating rating (0|1|2|3|4|5) #REQUIRED>
+<!ELEMENT extras (option, additional-cost)>
+<!ELEMENT option (#PCDATA)>
+<!ELEMENT additional-cost (#PCDATA)>
+<!ELEMENT coupon-code (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT promo-pic-path (#PCDATA)>
+<!ELEMENT manufacturer-promo-url (#PCDATA)>
+
+<!ENTITY universal-promo-code "AYUGFIAFOQWEQ">
+]>
+<cars car-type="Luxury">
+  <car>
+    <car-model>S-Class</car-model>
+    <description>The S-Class is engineered to operate quietly and comfortably at all times.</description>
+    <cost>$551,990</cost>
+    <make>Mercedes-Benz</make>
+    <safety-rating rating="4"></safety-rating>
+    <extras>
+      <option>Engine Upgrade</option>
+      <additional-cost>$10,000</additional-cost>
+    </extras>
+    <extras>
+      <option>Exterior Upgrade</option>
+      <additional-cost>$3,000</additional-cost>
+    </extras>
+    <reviews>Classic and great.</reviews>
+    <promo-pic-path>images/s-class.jpeg</promo-pic-path>
+    <manufacturer-promo-url>https://www.mercedes-benz.com/en/</manufacturer-promo-url>
+  </car>
+
+  <car>
+    <car-model>A8</car-model>
+    <description>The car represents Audi doing classic ‘vorsprung durch technik’ in a properly committed way.</description>
+    <cost>$508,490</cost>
+    <make>Audi</make>
+    <safety-rating rating="5"></safety-rating>
+    <extras>
+      <option>Tire Upgrade</option>
+      <additional-cost>$1,200</additional-cost>
+    </extras>
+    <extras>
+      <option>Turbocharge Engine Upgrade</option>
+      <additional-cost>$70,000</additional-cost>
+    </extras>
+    <coupon-code>&universal-promo-code;</coupon-code>
+    <reviews>The ride is smooth and the car is easy to drive!</reviews>
+    <promo-pic-path>images/a8.jpg</promo-pic-path>
+    <manufacturer-promo-url>https://www.audi.com/en.html</manufacturer-promo-url>
+  </car>
+
+  <car>
+    <car-model>LS Sedan</car-model>
+    <description>Crafted For Greatness</description>
+    <cost>$592,800</cost>
+    <make>Lexus</make>
+    <safety-rating rating="5"></safety-rating>
+    <extras>
+      <option>Metallic Paint Upgrade</option>
+      <additional-cost>$1,500</additional-cost>
+    </extras>
+    <extras>
+      <option>Interior Upgrade</option>
+      <additional-cost>$7,000</additional-cost>
+    </extras>
+    <reviews>Less luxurious but still great choice.</reviews>
+    <promo-pic-path>images/lssedan.jpg</promo-pic-path>
+    <manufacturer-promo-url>https://www.lexus.com/</manufacturer-promo-url>
+  </car>
+</cars>

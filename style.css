@@ -9,6 +9,7 @@ body {
 }
 
 #nav {
+    box-shadow: rgb(222 222 222 / 40%) 0px 0px 0px 3px; 
     font-family: Arial;
     list-style-type: none;
     margin: 0;
@@ -21,6 +22,7 @@ body {
     height: 63px;
     font-size: 20px;
     float: left;
+    transition: top 0.3s;
 }
 
 #nav li {
@@ -32,7 +34,7 @@ body {
 display: block;
 color: black;
 text-align: center;
-padding: 20px 30px;
+padding: 20px 25px;
 text-decoration: none;
 }
 
@@ -122,4 +124,64 @@ h4 {
 h5 {
     margin: 10px 0;
     font-size: 18pt;
+}
+
+body.doc {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+li .doc {
+    float: none;
+    text-align: left;
+    margin-left: 1cm;
+}
+
+p.doc {
+    margin-left: 1cm;
+    text-align: left;
+}
+
+h3.doc {
+    text-align: left;
+    color: black;
+    margin-left: 1cm;
+}
+
+input {
+    border: none;
+    border-radius: 80px;
+    background-color: #f3f3f3;
+    font-size: 15pt;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#divbox {
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: rgb(222 222 222 / 40%) 0px 0px 0px 2px; 
+    display: inline-block; 
+    text-align: center;
+    width: 500px;
+}
+
+.formcol-half {
+    padding: 0 20px; 
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.formcol {
+    padding: 0 20px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#submit{
+    background-color: #ff6154;
+    color: white;
+    cursor: pointer;
 }

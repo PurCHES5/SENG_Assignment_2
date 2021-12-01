@@ -6,53 +6,37 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            margin: 1cm;
             text-align: center;
             background-color: #f3f3f3;
+            background-image: url("images/highway_background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        li {
-            float: none;
-            text-align: left;
+        h2 {
+            margin-left: 1cm;
+            margin-top: 150px;
+            font-size: 40pt;
         }
-        p {
-            text-align: left;
-            margin-left: 0;
-        }
-        h3 {
-            text-align: left;
-            color: black;
-        }
-        input {
-            border: none;
-            border-radius: 80px;
-            background-color: #f3f3f3;
-            font-size: 15pt;
-            margin: 10px 0;
-            padding: 15px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        #divbox {
-            background-color: white; 
-            border-radius: 8px; 
-            box-shadow: rgb(222 222 222 / 40%) 0px 0px 0px 2px; 
-            display: inline-block; 
-            text-align: center;
-            width: 500px;
-        }
-        .formcol-half {
-            padding: 0 6px; 
-            width: 50%;
-            box-sizing: border-box;
-        }
-        .formcol {
-            padding: 0 6px; 
-            width: 100%;
-            box-sizing: border-box;
-        }
+        
     </style>
 </head>
 <body>
+    <ul id="nav">
+        <li>
+            <span style="display: block; color:orangered; text-align: center; padding: 20px 370px 0 100px; text-shadow: 1px 1px gold; font-weight: bold;">
+                JIM'S CARS
+            </span>
+        </li>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="data-collection.html">Data Collection</a></li>
+        <li><a href="XML_document_1.xml">SUV</a></li>
+        <li><a href="XML_document_2.xml">Luxury</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+    </ul>
+
     <h2>Contact Us Today!</h2>
     <div id="divbox">
         <form style="display: flex; flex-wrap: wrap;">
@@ -61,6 +45,7 @@
             <div class="formcol"><input type="text" name="mail", placeholder="Mail Address"></div><br>
             <div class="formcol"><input type="email" name="email" placeholder="Email"></div><br>
             <div class="formcol"><input type="tel" name="telephone" placeholder="Telephone"></div><br>
+            <div class="formcol"><input id="submit" type="submit" value="Submit"></div><br>
         </form>
     </div>
 </body>

@@ -8,3 +8,5 @@ landcruiser.jpg: https://global.toyota/
 s-class.jpeg: https://www.mercedes-benz.com/en/
 a8.jpg: https://www.audi.com/en.html
 lssedan.jpg: https://www.lexus.com/
+https://wallpaperaccess.com/full/521830.jpg
+https://wallup.net/wp-content/uploads/2016/01/241841-road-highway-landscape.jpg

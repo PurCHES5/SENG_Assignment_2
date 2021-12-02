@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="navhide.js"></script>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f3f3f3;
+            background-image: url("images/highway2_background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1300px;
+        }
+        h1 {
+            margin-top: 120px;
+            font-size: 40pt;
+            color:#E85473;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul id="nav">
+        <li>
+            <span style="display: block; color:orangered; text-align: center; padding: 20px 370px 0 100px; text-shadow: 1px 1px gold; font-weight: bold;">
+                JIM'S CARS
+            </span>
+        </li>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="data-collection.html">Data Collection</a></li>
+        <li><a href="XML_document_1.xml">SUV</a></li>
+        <li><a href="XML_document_2.xml">Luxury</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+    </ul>tel
+
+    <h1>Data Collection</h1>
+    <h2 style="margin-top: 0; font-size: 25px;">Submit your car here!</h2>
+    <div id="divbox">
+        <form style="display: flex; flex-wrap: wrap;" action="http://jkorpela.fi/cgi-bin/echo.cgi">
+            <div class="formcol-half"><input type="text" id="fname" name="fname" placeholder="First Name"></div><br>
+            <div class="formcol-half"><input type="text" id="lname" name="lname" placeholder="Last Name"></div><br>
+            <div class="formcol"><input type="text" id="idnum" name="idnum" placeholder="ID"></div><br>
+            <div class="formcol"><input type="text" id="mail" name="mail" placeholder="Mail Address"></div><br>
+            <div class="formcol"><input type="text" id="email" name="email" placeholder="Email"></div><br>
+            <div class="formcol"><input type="text" id="telephone" name="telephone" placeholder="Telephone"></div><br>
+            <div class="formcol"><input type="text" id="prevCars" name="prevCars" placeholder="Cars previously submitted (quantity)"></div><br>
+            <label for="boughtcarsyes">Have you bought cars in the past 5 years?</label>
+            <div class="formradio"><input type="radio" id="boughtcarsyes" name="boughtcars" value="Yes"></div>
+            <label class="radiolabel" for="boughtcarsyes">Yes</label>
+            <div class="formradio"><input type="radio" id="boughtcarsno" name="boughtcars" value="No" checked></div><br>
+            <label class="radiolabel" for="boughtcarsno">No</label>
+            <div class="formcol"><input type="text" id="carmodel" name="carmodel" placeholder="Model of the car"></div><br>
+            <label for="car-category" style="margin-top: 20px;">Choose a category for the car: </label>
+            <select id="car-category" name="car-category" style="margin-top: 10px;">
+                <option value="SUV">SUV</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Sport">Sport</option>
+                <option value="Family">Family</option>
+            </select><br>
+            <textarea id="description" name="description" placeholder="Description"></textarea>
+            <input type="checkbox" class="checkbox-input" id="extras" name="extras" value="true">
+            <label class="checkbox-label" for="extras">Including Extra(s)</label>
+            <input type="checkbox" class="checkbox-input" id="apply-coupon" name="apply-coupon" value="true">
+            <label class="checkbox-label" for="apply-coupon">Apply Jim's coupon codes</label><br>
+            <div class="formcol"><input id="submit" type="submit" value="Submit"></div>
+        </form>
+    </div>
+</body>

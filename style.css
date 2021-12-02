@@ -184,6 +184,13 @@ input {
     background-color: #ff6154;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+}
+
+#reset{
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
 }
 
 .formradio {
@@ -198,7 +205,7 @@ input {
     margin: 10px 10px 0 0;
 }
 
-#car-category {
+#car_category {
     width: 40%;
     font-size: 15pt;
     border-radius: 80px;

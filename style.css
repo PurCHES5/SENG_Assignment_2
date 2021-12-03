@@ -9,6 +9,15 @@ body {
     margin: 0 auto;
 }
 
+a:link {
+    color: blue;
+}
+
+/* Added header as required */
+header {
+    font-family: Verdana;
+}
+
 #nav {
     box-shadow: rgb(222 222 222 / 40%) 0px 0px 0px 3px; 
     font-family: Arial;
@@ -69,6 +78,7 @@ h1 {
     font-family: Verdana;
 }
 
+/* Underline h2 as required */
 h2 {
     margin-top: 60px;
     text-transform: uppercase;
@@ -77,6 +87,7 @@ h2 {
     font-weight: lighter;
     color: darkmagenta;
     font-family: Verdana;
+    text-decoration: underline;
 }
 
 h3 {

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head tag includes title, style (external and internal) and javascript for Navigation menu-->
 <head>
     <meta charset="UTF-8">
     <title>Jim's Cars</title>
     <link rel="stylesheet" href="style.css">
     <script src="navhide.js"></script>
+    <style>
+        h3 {
+            text-align: left;
+            margin-left: 100px;
+            font-size: 30pt;
+        }
+    </style>
 </head>
 <body>
     <!-- Used a fixed navigation bar on top of the page, the navigation bar includes the website name, two XML documents, and an external link as required-->
@@ -30,12 +38,12 @@
 
         <h1>Jim's Cars</h1>
 
-        <h2>Where your dream of cars comes true</h2>
+        <h2>Where your <span style="font-size: larger;">dream</span> of cars comes true</h2>
 
     </div>
 
     <!-- A welcome text and description of the website -->
-    <h3>Welcome to Jim's Cars!</h3>
+    <h2 style="color:darkorchid;">Welcome to Jim's Cars!</h2>
     <p> 
     <span style="margin-top: 40px; font-size: 16pt;">
         At <em><abbr title="Jim Penman">Jim</abbr>'s</em>, you can <strong>swap and trade</strong> second-hand cars.<br>
@@ -44,7 +52,7 @@
     </p>
 
     <!-- Showing a list of car models -->
-    <h4>Car models</h4>
+    <h3>Car models</h3>
 
     <ul id="models">
         <li>

@@ -4,6 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" />
     <xsl:template match="cars">
 	    <html>
+        <!-- The navigation menu must look the same as all other pages, but here cannot use external .css, therefore I just copied the required styles to here-->
 		    <head>	
                 <title>Cars information</title>		
                 <meta charset="UTF-8" />	
@@ -77,7 +78,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     }
                 </style>
 		    </head>
-
+            
+            <!-- Added some useful text for better displaying the information -->
 		    <body>
             <ul id="nav">
                 <li class="menu">
@@ -107,7 +109,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <li>Description: <xsl:value-of select="description" /></li>
             <li>Price: <xsl:value-of select="cost" /></li>
             <li>Make: <xsl:value-of select="make" /></li>
-            <li>Safety rating: <xsl:value-of select="safety-rating/@rating" /></li>
+            <li>Safety rating: <xsl:value-of select="safety-rating/@rating" />/5</li>
             <li>Extras: 
                 <xsl:apply-templates select="extras" />
             </li>

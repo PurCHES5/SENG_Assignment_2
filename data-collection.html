@@ -42,6 +42,7 @@
     <h1>Data Collection</h1>
     <h2 style="margin: 0 0 50px 0; font-size: 25px;">Submit your car here!</h2>
     <div id="divbox">
+        <!-- Added some other useful information: ID, mail address (not compulsory) and car color -->
         <form name="dataform" style="display: flex; flex-wrap: wrap;" action="http://jkorpela.fi/cgi-bin/echo.cgi" onsubmit="return validateForm()">
             <div class="formcol-half"><input type="text" id="fname" name="fname" placeholder="First Name*"></div><br>
             <div class="formcol-half"><input type="text" id="lname" name="lname" placeholder="Last Name*"></div><br>
@@ -70,12 +71,16 @@
             <label class="checkbox-label" for="extras">Including Extra(s)</label>
             <input type="checkbox" class="checkbox-input" id="apply_coupon" name="apply_coupon" value="true">
             <label class="checkbox-label" for="apply_coupon">Apply Jim's coupon codes</label><br>
+            <!-- Reset and submit button as per required -->
             <div class="formcol"><input id="reset" type="reset" value="Reset"></div>
             <div class="formcol"><input id="submit" type="submit" value="Submit"></div><br>
         </form>
     </div>
 
+    <!-- Javascript for validating form -->
     <script>
+        // Here I simplified the return. Since if one of the expressions is true the code won't execute "else" part, so I just put "return false" at the bottom
+        // outside the if else expressions. So that no need to copy "return false" for every if and else if 
         function validateForm()
         {
             if (document.dataform.fname.value == '')
@@ -90,13 +95,13 @@
             {
                 alert('Please enter your ID!');
             }
-            else if (document.dataform.email.value == '')
-            {
-                alert('Please enter your e-mail!');
-            }
             else if (document.dataform.car_category.value == 'null')
             {
                 alert('Please select a car category!');
+            }
+            else if (document.dataform.email.value == '')
+            {
+                alert('Please enter your e-mail!');      // if the email is null it will just say enter, otherwise it will check the next else if to see if it's valid
             }
             else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.dataform.email.value)))
             {
